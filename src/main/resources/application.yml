@@ -1,0 +1,38 @@
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.232.141:3306/wechar_shop?characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    show-sql: true
+  jackson:
+    default-property-inclusion: non_null
+  redis:
+    host: 192.168.232.132
+    port: 6379
+    password: 970420
+server:
+  context-path: /sell
+
+
+wechat:
+  myAppId: wx9b4f4db6ef3ce9a0
+  myAppSecret: 37554e0a9de397c1709e4f60d7c6e418
+
+  #微信扫码登录
+  #  openAppId: XXXXXXXXXXXXXXX
+  #  openAppSecret: XXXXXXXXXXXXXXXXX
+  #  由于没有微信商户信息，无法完成微信支付开发测试；如果有商户id的请填完善全部信息！
+  #  mchId: 1483469312
+  #  mchKey: 06C56A89949D617xxxxxxxxxxx
+  #  当需要进行退款服务时需要微信端提供的证书，该文件要存放到java可以访问到的目录
+  #  keyPath: /var/weixin_cert/h5.p12
+  notifyUrl: http://comjxau.natapp1.cc/sell/pay/notify
+#  templateId:
+#    orderStatus: e-Cqq67QxD6YNI41iRiqawEYdFavW_7pc7LyEMb-yeQ
+
+projectUrl:
+  wechatMpAuthorize: http://comjxau.natapp1.cc
+  wechatOpenAuthorize: http://comjxau.natapp1.cc
+  sell: http://comjxau.natapp1.cc
